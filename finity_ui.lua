@@ -25,6 +25,17 @@
 					
 --]]
 
+            local letters = {"A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",}
+            local RandomLenght1 = math.random(5, 11)
+            local RandomLenght2 = math.random(RandomLenght1, 12)
+            local length = RandomLenght1
+            local textName = ""
+            
+            for i = 1, length do
+                textName = textName.. "" ..letters[math.random(1,#letters)]
+                if i == length then
+                end
+            end
 
 local finity = {}
 finity.gs = {}
@@ -223,7 +234,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	end)
 
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = "FinityUI",
+		Name = textName,
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
