@@ -1305,7 +1305,7 @@ function finity.new(isdark, gprojectName, thinProject)
 
 							connection = finity.gs["UserInputService"].InputBegan:Connect(function(Input)
 								if Input.UserInputType.Name == "Keyboard" and Input.KeyCode ~= finityData.ToggleKey and Input.KeyCode ~= Enum.KeyCode.Backspace then
-									cheat.button.Text = "Bound to " .. tostring(Input.KeyCode.Name)
+									cheat.button.Text = tostring(Input.KeyCode.Name)
 									
                                     if connection then
                                         connection:Disconnect()
