@@ -1,1 +1,1 @@
---Please visit us on Discord for the updated version  https://discord.com/invite/Gxn9KJu
+-- visit www.void-scripts.com - this version is outdated
